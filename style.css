@@ -65,21 +65,18 @@ main {
 }
 
 @media (max-width: 768px) {
-    .hero {
-        padding: 6rem 1.5rem 2rem; /* 모바일에서 여백 조정 */
-    }
-    .hero-content {
-        flex-direction: column; /* 사진 위, 텍스트 아래 */
-        text-align: center;
-    }
-    .hero-text {
-        text-align: center;
-    }
-    .hero-image img {
-        max-width: 150px; /* 모바일에서는 더 작게 */
-    }
+  .hero-content {
+    flex-direction: column !important; 
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center !important;
+  }
+  .hero-image img {
+    max-width: 150px;
+  }
 }
-
 /* About */
 .about {
     padding: 3rem;
