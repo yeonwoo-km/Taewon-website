@@ -36,12 +36,27 @@ main {
 
 .hero-image img {
     width: 250px;         
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .hero-text {
     flex: 1;
     text-align: left; 
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #ffd700;
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #e6c200;
 }
 
 /* About */
