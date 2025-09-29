@@ -9,7 +9,6 @@ body {
     line-height: 1.6;
 }
 
-
 main {
     flex: 1;
     padding-top: 6rem; 
@@ -17,29 +16,30 @@ main {
 
 /* Hero */
 .hero {
-    min-height: 100vh;
+    min-height: calc(100vh - 6rem); 
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom, #003366, #1a5276);
     color: white;
-    padding: 4rem 2rem 2rem;
+    padding: 4rem 2rem 2rem; /* 위쪽 여백 줄임 */
 }
 
 .hero-content {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem; 
     max-width: 1000px;
     width: 100%;
 }
 
 .hero-image img {
-  width: 100%;
-  max-width: 250px;   
-  height: auto;       
-  border-radius: 10px;
-  box-shadow: none !important;
+    width: 100%;
+    max-width: 220px;   /* PC에서는 최대 220px */
+    height: auto;       
+    border-radius: 10px;
+    box-shadow: none !important;
 }
 
 .hero-text {
@@ -61,6 +61,19 @@ main {
 
 .hero .btn:hover {
   background: #e6c200;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column; /* 사진 위, 텍스트 아래 */
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-image img {
+    max-width: 150px; /* 모바일에서는 이미지 더 작게 */
+  }
 }
 
 /* About */
