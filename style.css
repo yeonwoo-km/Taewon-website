@@ -4,43 +4,44 @@ body {
     height: 100%;
     margin: 0;
     display: flex;
-    flex-direction: column; /* 위에서 아래로 정렬 */
+    flex-direction: column; 
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
 }
 
-/* main은 남는 공간 차지 */
+
 main {
     flex: 1;
-    padding-top: 6rem; /* 헤더 때문에 본문과 여백 */
+    padding-top: 6rem; 
 }
 
 /* Hero */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     background: linear-gradient(to bottom, #003366, #1a5276);
     color: white;
-    padding: 8rem 2rem 2rem;  /* 🔑 위쪽 패딩 8rem으로 늘림 */
+    padding: 8rem 2rem 2rem;
 }
-.hero .highlight {
-    color: #ffd700; /* 골드 포인트 */
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+    max-width: 1000px;
+    width: 100%;
 }
-.hero .btn {
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    background: #ffd700;
-    color: #003366;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+
+.hero-image img {
+    width: 250px;         
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-.hero .btn:hover {
-    background: #e6c200;
+
+.hero-text {
+    flex: 1;
+    text-align: left; 
 }
 
 /* About */
@@ -51,7 +52,6 @@ main {
     text-align: center;
 }
 
-/* Highlights */
 /* Highlights */
 .highlights {
     padding: 3rem;
@@ -71,7 +71,7 @@ main {
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center; /* 중앙 정렬 추가하면 더 깔끔 */
+    text-align: center; 
     width: auto;
 }
 
@@ -162,7 +162,7 @@ form button:hover {
 header {
     background: #003366;
     padding: 1rem 0;
-    position: fixed; /* 스크롤 내려도 고정 */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
