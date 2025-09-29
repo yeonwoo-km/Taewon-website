@@ -35,8 +35,11 @@ main {
 }
 
 .hero-image img {
-    width: 250px;  
-    box-shadow: none !important;
+  width: 100%;
+  max-width: 250px;   
+  height: auto;       
+  border-radius: 10px;
+  box-shadow: none !important;
 }
 
 .hero-text {
